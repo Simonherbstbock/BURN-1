@@ -1,0 +1,587 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  /* struktur*/
+body{
+    display: grid;
+    grid-template-rows: 2fr 1.5fr 1.5fr 0.5fr;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+:root{
+    --GB_H:35vh;
+    --GB_W:65vh;
+    --BACKSTYL_RADIANT:radial-gradient(rgb(104, 104, 108),rgb(29, 31, 29));
+}
+
+.box{
+    
+    
+    width: 200px;
+    height: 200px;
+
+}
+.box_display{
+    
+    
+    width: 110vh;
+    height: 400px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+}
+main{
+    display: flex;
+    justify-content: flex-start;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+}
+.a{
+    width: 60vh;
+    height: 400px;
+}
+.b,.c,.e,.d{
+    width: var(--GB_W);
+    height: var(--GB_H);
+
+}
+div{
+    margin: 15px;
+}
+
+/* Styling */
+body{
+    background-image: radial-gradient(grey, rgb(96, 96, 111));
+    background-image: var(--BACKSTYL_RADIANT); 
+
+}
+div{
+    border: 4px solid rgb(0, 0, 0);
+     background-color: rgb(49, 48, 48); 
+    
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(11, 11, 12);
+
+}
+.weit-btn{
+    
+    padding: 10px;
+    padding-left: 70vh;
+    padding-right: 70vh;
+    
+    
+    border-radius: 10px;
+    
+   
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+
+    
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    text-shadow: 0 0 5px;
+    color: rgba(255, 255, 255, 0.276);
+}
+.a{
+    box-shadow: 0 0 3px red;
+}
+.b{
+    box-shadow: 0 0 3px orange;
+}
+.c{
+    box-shadow:0 0 3px red;
+}
+.d{
+   box-shadow: 0 0 3px  red      /*    rgb(1, 254, 1); */
+}
+.e{
+    box-shadow: 0 0 3px orange        /* rgb(67, 161, 255);*/
+}
+.box_display{
+    box-shadow: 0 0 3px darkred;
+    background-image: linear-gradient(to left,red,orange,yellow); ;
+}
+
+
+
+
+/* Inhalt der Boxen  */
+
+/* Genereller Style  */
+/* BOX B  */
+.box b{ 
+    display: block;
+}
+.box b figure{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.mann{ 
+    margin: 110px;
+    padding: 0;
+    border-radius: 20px;
+    border: 5px double black;
+}
+.frau{ 
+    margin: 50px;
+    padding: 0;
+    /* border: 5px solid black; */
+    box-shadow: 2px ;
+    margin-bottom: 115px;
+    background-color: rgb(49, 48, );
+    border: 5px double black;
+    border-radius: 20px;
+    /* background-image: radial-gradient( orange,yellow); */
+}
+/* img:hover{box-shadow: 0 0 15px 15px black; } */
+/* img:active{  box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.6);} */
+/* wenn angecklickt */
+.active{
+   
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.6);
+ 
+    border-radius: 20px;
+    /* background-image: radial-gradient( orange,yellow); */
+}
+
+
+/* box c  */
+
+
+.c{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+form div { 
+    padding: 2vh;
+    display: flex;
+
+    
+  
+}
+.input{
+  margin-right: 20px;
+  margin-left: 10px;
+  
+}
+div span{
+    margin-right: 3px;
+  
+
+}
+
+
+.ws{
+    width: 60%;
+    background-color: transparent;
+    border: none;
+    border-radius: 0%;
+    box-shadow: none;
+ text-align: end;
+   font-size: 250%;
+   text-shadow: 2px 2px 2px white;
+   font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+img{
+    padding-left: 100px;
+}
+.kal-h1{
+    text-shadow: 2px 2px 2px white;
+    width: 40%;
+    background-color: transparent;
+    border: none;
+    border-radius: 0%;
+    box-shadow: none;
+ text-align: start;
+   font-size: 250%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* BOX C KORPERDATEN */
+form div{
+    display: flex;
+    justify-content: center;
+}
+div label{ 
+    color: grey; 
+    text-shadow: 5px 5px 0 0 white;
+    font-size: 1.1em;
+    
+}
+form div span,form div i{ 
+    color: grey;
+}
+input{ 
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+
+/* animtation Weiter Button */
+/* Allgemeines Styling für den Slider */
+.input {
+    -webkit-appearance: none; /* Entfernt das Standard-Design im Webkit-basierten Browser */
+    appearance: none; /* Entfernt das Standard-Design für andere Browser */
+    width: 100%; /* Vollständige Breite */
+    height: 10px; /* Höhe der Leiste */
+    background: #ddd; /* Farbe der Leiste */
+    outline: none; /* Entfernt den Standard-Rahmen */
+    opacity: 0.7; /* Transparenz */
+    transition: opacity .15s ease-in-out;
+  
+}
+
+.input:hover {
+    opacity: 1; /* Beim Hovern wird die Transparenz entfernt */
+}
+
+/* Stil für den Daumen (der Kreis, der bewegt wird) */
+.input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Entfernt Standard-Webkit-Thumb */
+    appearance: none;
+    width: 15px; /* Breite des Daumens */
+    height: 10px; /* Höhe des Daumens */
+    background: url('/img/25-258609_emoji-fire-flame-clip-art-fire-emoji.png');
+    cursor: pointer; /* Zeiger beim Hovern */
+    border-radius: 10%; /* Macht den Daumen rund */
+    border: #FF4500;
+}
+
+.input::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #FF4500; /* Daumenfarbe (Orange) */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Füllung der Leiste bis zum aktuellen Wert (nur WebKit-basierte Browser) */
+.input::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, red, orange); /* Roter-Oranger Farbverlauf */
+    height: 10px; /* Höhe der Leiste */
+    border-radius: 10px; /* Macht die Leiste runder */
+}
+
+/* Füllung der Leiste für Firefox */
+.input::-moz-range-track {
+    background: linear-gradient(to right, red, orange); /* Roter-Oranger Farbverlauf */
+    height: 8px;
+    border-radius: 10px;
+}
+
+
+
+/* Füllung der Leiste für IE */
+.input::-ms-fill-lower {
+    background: red;
+}
+
+.input::-ms-fill-upper {
+    background: orange;
+}
+
+
+
+
+:where(section:hover){
+    transform-origin: top center;
+    animation: showMenu 1s ease-in-out forwards;
+    
+ }
+
+
+
+/* Box D */
+
+
+.d{ 
+   display: flex;
+   justify-content: center;
+  flex-direction: column;
+ }
+.muskl{
+    border: none;
+    padding: none;
+    box-shadow: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: 20px;
+    
+}
+figure{ 
+    margin: 5px;
+}
+
+.muskl figure , .aktiv figure{ 
+    display: block;
+    position: relative;
+    
+    margin: 1 0px;
+    border: 5px double black;
+   border-radius: 20px;
+
+
+}
+body footer .mittel{ 
+    width: 410;
+    /* margin-left: 30px; */
+    padding: 25px;
+}
+body footer .wenig{ 
+    padding: 50px;
+}
+
+
+.muskl figure img , .aktiv figure img{ 
+  padding: 0;
+  margin: 0;
+  border: none;
+   box-shadow: none;
+  
+
+   
+}
+.muskl figure figcaption , .aktiv figure figcaption{ 
+    color: gray; 
+    text-shadow: 0 0 1px grey;  
+    position: absolute;
+    font-size: 2em;
+}
+.stark figcaption{ 
+    
+    bottom: 35px;
+    left: 17%;
+}
+.mittel figcaption{ 
+    
+    bottom: 35px;
+    left: 14%;
+
+}
+.wenig figcaption{ 
+    width: 250px;
+    bottom: 35px;
+    left: 12%;
+}
+/*  Box E  */
+
+.e{ 
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+  }
+  .aktiv{ 
+    border: none;
+    padding: none;
+    box-shadow: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: 13 px;
+
+  }
+
+  .aktiv .wAktive, .aktiv .mAktive{ 
+
+padding: 30px;
+padding-bottom: 50px;
+  }
+  .aktiv .sAktive{
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+.aktiv .sAktive figcaption{ 
+    text-align: center;
+    width: 500px;
+    bottom: 5px;
+    left: -30%;
+}
+.aktiv .wAktive figcaption, .aktiv .mAktive figcaption{ 
+    text-align: center;
+    width: 500px;
+    bottom: 5px;
+    left: -25%;
+}
+
+
+
+  /*  Butten fuer Rechnung und Auswertung */
+
+.berechen{
+        width: 30%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+        border: none;
+        background-color: rgb(96, 96, 111);
+        font-size: 1.5em;
+        color: rgb(48, 43, 43);
+    
+    } 
+
+    .berechen
+        :hover{
+        background-color:rgb(129, 129, 142);;
+    }
+.berechen:active{
+        background-color: red;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+        width: 32%;
+        font-size: 1.7em;
+    }
+
+
+.weit-btn{ 
+    margin-bottom: 20px;
+}
+
+.aktiviert{
+  background-color: chartreuse;
+}
+
+@keyframes showMenu {
+    0%{
+        background-color: rgb(255, 0, 0);
+        transform: scale(101%);
+
+    }
+    20%{
+        background-color: rgb(255, 128, 0);
+        transform: scale(102%);
+    }
+    40%{
+        background-color: rgb(255, 234, 0);
+        transform: scale(103%);
+    }
+    60%{
+        background-color: orange;
+        transform: scale(104%);
+
+    }
+    100%{
+        background-color: red;
+        transform: scale(105%);
+
+    }
+ 
+  
+}
+:is(section:active){
+    transform-origin: top center;
+    animation: bbb 1s ease-in-out forwards;
+
+}
+@keyframes bbb{
+    0%{
+        background-image: linear-gradient(to left,red,orange,yellow);
+        transform: scale(110%);
+
+    }
+    
+}
+.wenig img {
+    width: 225px;
+}
+.mittel img {
+    width: 275px;
+}
+.stark img {
+    width: 325px;
+}
+
+
+/* Für das Macbook  */
+
+@media screen and (min-width: 1900px) and (max-width: 2700px) and (min-height: 900px) and (max-height: 1600px) {
+
+.muskl{ 
+    width: 80%;
+    margin-left:  1.3%;
+    margin-right: 0.5%;
+   
+}
+ .wenig  img {
+     width: 169px;
+ }
+ .mittel img {
+     width: 220px;
+ }
+ .stark img {
+     width: 270px;
+ }
+
+ .stark figcaption{ 
+
+     bottom: 35px;
+     left: 28px;
+   
+
+ }
+ .mittel figcaption{ 
+ 
+     bottom: 35px;
+     left: 25px;
+ 
+ }
+ .wenig figcaption{ 
+     width: 250px;
+     bottom: 35px;
+     left: 20px;
+ }
+.aktiv .sAktive img{
+width: 210px;
+}
+
+ .aktiv{
+     margin-left: 30px;
+ }
+ .aktiv img{
+     width: 200px;
+ }
+ .aktiv .sAktive figcaption{ 
+     text-align: center;
+     width: 500px;
+     bottom: 5px;
+     left: -50%;
+ }
+ .aktiv .wAktive figcaption, .aktiv .mAktive figcaption{ 
+     text-align: center;
+     width: 500px;
+     bottom: 5px;
+     left: -47%;
+ }
+}
