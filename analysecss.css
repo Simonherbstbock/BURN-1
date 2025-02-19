@@ -1,0 +1,583 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* || GENERAL STYLES */ 
+body {
+    color: rgb(255, 255, 255);
+    font: 1.5rem  sans-serif;
+ 
+   
+    background-image: var(--BACKSTYL_RADIANT); 
+    /* background-image: radial-gradient(rgb(134, 205, 136) ,rgb(29, 196, 48)); */
+    display: grid;
+    grid-template-rows: 300px 2.0fr 0.5fr ; 
+    
+
+}
+:root{
+    --BACKSTYL_RADIANT:radial-gradient(rgb(104, 104, 108),rgb(29, 31, 29));
+    --BACKSTYL_BACKGROUND:rgba(108, 104, 104, 0.513);
+    --BORDER_STYLE:4px solid rgb(32, 31, 31);
+    --BORDER_RADIUS:2px;
+}
+w{
+    position: sticky;
+}   
+.d-none{
+    display: none;
+}
+i{ 
+    font-style: normal;
+}
+
+
+header{
+    width: 80%;
+    max-height: 600px;
+  
+    
+    box-shadow: 0 0 2px 2px  rgba(0, 0, 0, 0.395);
+    margin: 10px;
+    padding: 2rem;
+    display: block;
+    align-content: center;
+    border: 5px solid rgb(49, 48, 48);
+    background-color: rgba(73, 71, 71, 0.161);
+    border-radius: 7px;
+   
+  
+    
+    margin-left: 10%;
+}
+
+header h1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    /* color: rgb(233, 234, 252); */
+    /* text-shadow: 2px 2px 5px rgb(164, 124, 124); */
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 3px solid rgb(49, 48, 48);
+    background-size: cover;
+    /* background-image: url(/img/seamless-pattern-with-burger-pink-background_622847-118.avif); */
+    /* background-image: linear-gradient(to left,red , orange,yellow,green, rgb(0, 217, 255),blueviolet); */
+ background-image: linear-gradient(red,orange);
+
+
+   
+    color: rgb(255, 255, 255);
+   
+    
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+main{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 370vh;
+
+}
+main .makros{ 
+    width: 80%;
+    height: 110vh;
+    margin: 10px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid rgb(49, 48, 48);
+    background-color: rgba(73, 71, 71, 0.161);
+    border-radius: 7px;
+    box-shadow: 0 0 2px 2px  rgba(0, 0, 0, 0.395);
+   
+   
+}
+.makros .kalAlt{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.378);
+  font-size: 1.9rem;
+      
+    border: 4px double black;
+    border-radius: 10px;
+    width: 95%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    
+    
+}
+.makros .kalAlt h2{
+    font-size: 3rem;
+}
+.makros .kalAlt h2,.makros .kalAlt h1{
+    background-image: linear-gradient(to left,red , orange,yellow);
+    -webkit-background-clip: text;
+     color: transparent;
+}
+
+main .makros ul{ 
+
+   
+       display: flex;
+    justify-content: center;
+    height: 90%;
+    background-color: rgba(22, 22, 22, 0);
+    
+    border-radius: 15px;
+    justify-content: space-around;
+}
+main .makros ul li{
+  list-style: none;
+  
+   background-color: rgba(0, 0, 0, 0.24);
+ position: relative;
+   height: 97%;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    width: 500px;
+    
+}
+
+
+main .makros ul li figcaption{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 10px;
+    font-size: 2rem;
+    
+}
+main .makros ul li section{ 
+    padding: 20px;
+    border-bottom: 2px solid rgb(242, 101, 0);
+    background-image: linear-gradient(to left,red , orange,yellow);
+    -webkit-background-clip: text;
+     
+     color: transparent;
+     
+     
+}
+main .makros ul li u{ 
+    
+   
+    background-image: linear-gradient(to left,red , orange,yellow);
+    -webkit-background-clip: text;
+     
+     color: transparent;
+     
+     
+}
+
+main .makros ul li img{
+    width: 15vh;
+    height: 15vh;
+   
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .makros ul li .Huhn{ 
+    width: 15vh;
+    height: 17vh;
+   
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .makros ul li p{
+    position: absolute;
+    background-image: linear-gradient(to left,red , orange,yellow);
+    -webkit-background-clip: text;
+     
+     color: transparent;
+     
+    margin-top: 20px;
+    width: 100%
+   
+}
+
+.passend{ 
+    border: 2px solid rgb(71, 132, 72) !important;
+    box-shadow: 0 0 10px rgb(50, 156, 54);
+}
+
+
+.nicht-passend{ 
+    border: 2px solid rgb(193, 78, 78) !important;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+
+
+
+/* Weiter Frage  */
+
+
+.frageWeiter,.frageWeiterB {
+    /* background-image: linear-gradient(to left,red , orange,yellow,green, rgb(0, 217, 255),blueviolet); */
+    background-image: linear-gradient(to left,red , orange,yellow);
+    -webkit-background-clip: text;
+     
+     color: transparent;
+    margin-top: 40px;
+    padding: 40px;
+    width: 80.2%;
+    height: 50%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+   border: 2px solid rgb(49, 48, 48);
+    /* background-image: url(/img/seamless-pattern-with-burger-pink-background_622847-118.avif); */
+    border: 8px solid rgb(49, 48, 48);
+    border-radius: 7px;
+    max-height: 50vh;
+} 
+.neuesZiel{
+    background-image: linear-gradient(to left,red , orange,yellow);
+    -webkit-background-clip: text;
+     
+     color: transparent;
+    margin-top: 40px;
+    padding: 40px;
+    width: 80.2%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+   border: 2px solid rgb(49, 48, 48);
+    /* background-image: url(/img/seamless-pattern-with-burger-pink-background_622847-118.avif); */
+    border: 8px solid rgb(49, 48, 48);
+    border-radius: 7px;
+    max-height: 110vh;
+
+}
+.jaNein,.jaNeinB{ 
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2.5em;
+}
+.Ja,.Nein{ 
+   
+ width: 30%;
+ height: 100%;
+ font-size: 2rem;
+ border-radius: 17px;
+ border: 5px double rgb(97, 94, 94);
+ background-color: rgba(46, 44, 44, 0.567);
+ box-shadow: 0 0 10px 5px rgba(74, 74, 73, 0.5);
+ 
+}
+.Ja{
+    color: rgb(209, 156, 59); 
+
+}
+.Nein{
+    color: rgb(196, 91, 91);
+}
+.Ja:hover,.Nein:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+.Ja:active,.Nein:active{
+    scale: 0.9;
+    transition: 0.3s;
+    box-shadow: 0 0 10px 5px rgba(252, 252, 252, 0.5);
+    
+} 
+.frageWeiter .frage,.frageWeiterB .frage{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  
+} 
+.frageWeiter .frage h3,.frageWeiterB .frage h3{
+    font-size: 1.5rem;
+    
+}
+.frageWeiter .frage h2,.frageWeiterB .frage h2{
+    font-size:  2.9rem;
+    
+}
+
+.neuesZiel{ 
+    height: 80%;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr ;
+    width: 80%;
+    justify-content: center;
+   
+   
+
+}
+.neuesZiel .frage{ 
+    text-align: center;
+    font-size: 2rem;
+}
+.neuesZiel .kalChange{
+    grid-row-start: 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+   
+    
+    width: 100%;
+}
+.neuesZiel .kalChange ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+.neuesZiel .kalChange ul li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.24);
+  
+      
+       border: 4px double black;
+       border-radius: 20px;
+
+margin: 100px;
+
+} 
+.neuesZiel .kalChange ul li figcaption{
+    font-size: 2.5rem;
+    background-image: linear-gradient(to left,red , orange,yellow);
+    -webkit-background-clip: text;
+     
+     color: transparent;
+    
+}
+
+.neuesZiel .kalChange ul :nth-child(2){
+    padding: 1.2%;
+} 
+.neuesZiel .kalChange ul :nth-child(3){
+    padding-top: 3.3%;
+    padding-bottom: 1.3%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+} 
+.neuesZiel .kalChange ul :nth-child(1){
+   padding: 0.2%;
+   padding-left: 0.8%;
+   padding-right: 0.8%;
+} 
+.neuesZiel .kalChange ul :nth-child(2) figcaption{
+    padding-top: 25px;
+    padding-bottom: 0;
+} 
+.neuesZiel .kalChange ul :nth-child(2) img{
+    padding-bottom: 25px; 
+  
+} 
+.neuesZiel .kalChange ul :nth-child(3) figcaption{
+    padding-top: 25px;
+    padding-bottom: 0;
+} 
+.neuesZiel .kalChange ul :nth-child(3) img{
+    padding-bottom: 25px; 
+  
+} 
+.neuesZiel .kalChange ul :nth-child(1) figcaption{
+    
+    padding-bottom: 25px;
+} 
+.neuesZiel .kalChange ul :nth-child(1) img{
+    padding-bottom: 25px; 
+  
+} 
+.neuesZiel .kalNeu{ 
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.378);
+  font-size: 2rem;
+      
+    border: 4px double black;
+    border-radius: 20px;
+    width: 90%;
+    padding: 10%;
+    margin-top: 90px;
+   
+}
+
+.neuesZiel .kalNeu h2,.neuesZiel .kalNeu h1{
+    background-image: linear-gradient(to left,red , orange,yellow);
+    -webkit-background-clip: text;
+     
+     color: transparent;
+} 
+    
+footer{ 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    max-height: 20vh;
+}
+.ende{ 
+    padding-top: 10px;
+    margin-top: 30px;
+    height: 50px;
+    width: 50%;
+  
+
+    
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.021);
+   
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+.ende:hover{
+    scale: 1.1;
+      }
+
+ .ende:active{
+     border: 2px solid rgb(0, 0, 0);
+     background-color: red;
+     box-shadow: 0 0 10px rgb(255, 255, 255);
+     scale: 1.12;
+      }
+
+      .neuesZiel .kalChange ul li:hover{
+        scale: 1.1;
+      }
+      .Active{ 
+       box-shadow: 0 0 15px rgb(255, 255, 255);
+
+      }
+.eyeAnimation{
+       
+    width: 600px;
+    background-color: rgba(240, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+   /* border-bottom: 5px solid black; */
+   padding: 50px;
+
+   border-bottom: 5px solid #000;
+   border-left: 2px solid transparent;
+   border-right: 2px solid transparent;
+   border-radius: 60px;
+   
+   
+    flex-direction: row;
+      }
+      .passt{ 
+        border-radius: 130px;
+      }
+      .passtNicht{ 
+        border-radius: 0px;
+      }
+
+      .eye,.eye2{
+        border-radius: 100%;
+        margin: 100px;
+         width: 50px;
+         height: 50px;
+         
+         
+         
+      }
+  
+      .eyes{ 
+       
+        border-radius: 150px;
+        width: 400px;
+        background-color: azure;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border: 2px solid black;
+        margin-bottom: 40px;
+      }
+
+
+
+
+      @media screen and (min-width: 1900px) and (max-width: 2700px) and (min-height: 900px) and (max-height: 1600px) {
+   
+   
+    main .makros{
+        width: 93%;
+        height: 100vh;
+        
+
+
+
+
+     }
+     header{
+     width: 93%;
+     margin-left: 3.5%;
+     
+     justify-content: center;
+
+     }
+     .frageWeiter,.frageWeiterB,.neuesZiel{
+        width: 93.3%;
+     }
+     
+     footer{
+        margin-top: 30px;     }
+       main .neuesZiel  .kalNeu{
+            margin-top: 40px;
+         }
+     }
+
+
+     
